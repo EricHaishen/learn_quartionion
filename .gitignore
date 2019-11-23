@@ -1,4 +1,4 @@
-#MATLAB 
-*.juzhenchengfa.asv
+#忽略juzhenchengfa.asv文件 
+.juzhenchengfa.asv
 
 
