@@ -2,6 +2,5 @@
 
 .asv #忽略所有asv格式的文件
 
-#忽略test文档
-test.txt
-test2.txt
+#忽略.txt文件
+*.txt
