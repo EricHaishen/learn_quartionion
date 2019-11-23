@@ -3,4 +3,4 @@
 .asv #忽略所有asv格式的文件
 
 #忽略.txt文件
-*.txt
+test3.txt
