@@ -40,11 +40,13 @@ syms a b c d ;
 % q_x = q_L*q_R
 
 %绕本体惯性参考系三个轴向复合旋转后的矩阵
+%rotate
 
-syms e f g h
-q1= [a b c d ]
-q2= [e;f;g;h]
-q_L=q1*q2
-q_R=q2*q1
+
+ syms e f g h
+ q1= [a b c d ]
+ q2= [e;f;g;h]
+% q_L=q1*q2
+ q_R=q2*q1
 
 
