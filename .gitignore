@@ -1,9 +1,5 @@
-﻿#忽略juzhenchengfa.asv文件 
+﻿#忽略juzhenchengfa.m文件 
 juzhenchengfa.m  
-*.asv #忽略所有asv格式的文件
 
-#"#"是注释。需要忽略什么文件可以直接另起一行写下文件名并带上文件类型
-#比如不想要提交 test.txt,在下一行写上就好
-#
-#如果不想要提交文件  如 test/ 写下就行
-#如果是文件的话，直接写文件名称，如 test.txt
+#忽略所有asv格式
+*.asv 
