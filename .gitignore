@@ -3,3 +3,6 @@ juzhenchengfa.m
 
 #忽略所有asv格式
 siyuanshu.asv 
+
+#忽略所有asv格式
+*.asv
