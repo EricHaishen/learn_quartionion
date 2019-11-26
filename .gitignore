@@ -1,8 +1,4 @@
 ﻿#忽略juzhenchengfa.m文件 
-juzhenchengfa.m  
-
-#忽略所有asv格式
-siyuanshu.asv 
-
+juzhenchengfa.m
 #忽略所有asv格式
 *.asv
