@@ -47,12 +47,13 @@
  
 
 %%
- % %定义绕z轴逆时针旋转为正方向，
+%第一种
+%定义绕z轴逆时针旋转为正方向，
 r_z = [Cz  -Sz  0;
        Sz   Cz  0;
        0        0    1];
 
-% %定义绕y轴顺时针旋转为正方向， 
+% %定义绕y轴逆时针旋转为正方向，此时的Z轴相当于绕Z轴旋转时原来的X轴，此时的X轴相当于原来的Y轴
 r_y = [Cy  0    Sy;
           0    1     0   ;
       -Sy  0    Cy];
@@ -60,7 +61,21 @@ r_y = [Cy  0    Sy;
 r_x = [  1       0      0;
          0   Cx  -Sx;
          0   Sx   Cx];
-     
+
+%第2种
+%定义绕z轴逆时针旋转为反方向，
+r_z2 = [Cz  Sz  0;
+       -Sz   Cz  0;
+       0        0    1];
+
+% %定义绕y轴逆时针旋转为反方向， 
+r_y2 = [Cy  0    Sy;
+          0    1     0   ;
+      -Sy  0    Cy];
+% %定义绕x轴逆时针旋转为反方向，
+r_x2 = [  1       0      0;
+         0   Cx  Sx;
+         0   -Sx   Cx];
 % global oper_rad2deg %弧度值转角度值
 % oper_rad2deg = 360 /(2*pi);
 % fprintf('绕z轴旋转角度：%d 度\n',oper_z*oper_rad2deg)   
@@ -68,8 +83,9 @@ r_x = [  1       0      0;
 % fprintf('绕x轴旋转角度：%d 度\n',oper_x*oper_rad2deg)    
 
 fprintf('欧拉角复合旋转矩阵为：')
-rotate = r_z * r_y *r_x
-%rotate2 = r_x * r_y *r_z
+rotate_ = r_z * r_y *r_x
+rotate2 = r_z2 * r_y2 *r_x2
+z_x_y = r_z * r_x * r_y
 % %旋转后的状态
 % fprintf('旋转后得到的矩阵为：\n')
 % v_after_rotate = rotate * v0
